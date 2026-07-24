@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.container{
+    background-color: #4bb;
+    display: flex;
+    height: 600px;
+    flex-direction:row;
+    width: 100%;
+    
+}
+.container h2{
+    position: absolute;
+color: white;
+font-size:60px;
+height: 200px;
+}
+
+.image1,
+.image2{
+    width: 50%;
+    position: relative;
+}
+
+.image1 img{
+    height: 440px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+  flex: 1;
+    animation: firstImage 2s linear forwards;
+}
+
+.image2 img{
+    width: 300px;
+    height: 440px;
+    position: absolute;
+    bottom: 0;
+    flex: -2;
+    left: 0;
+    /* transform: translateX(200%); */
+    animation: secondImage 2s linear forwards;
+     /* Starts after first image finishes */
+}
+
+@keyframes firstImage{
+    from{
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes secondImage{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.container2{
+    width: 100%;
+    height: 1000px;
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+.card2{
+    margin: 40px;
+    width: 90%;
+    height: 90%;
+  display: flex;
+
+}
+.card2 image{
+    width: 30%;
+}
+.image3 img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20%;
+}
+.p{
+    font-size: 20px;
+    margin: 30px;
+    width: 70%;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+@media (max-width: 576px) {
+
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container h2{
+        position: static;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .image1,
+    .image2{
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image1 img,
+    .image2 img{
+        position: static;
+        width: 220px;
+        height: 300px;
+        margin: 10px 0;
+    }
+
+    .icon ul{
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .container2{
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .card2{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .image3{
+        width: 100%;
+    }
+
+    .image3 img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .p{
+        width: 100%;
+        margin: 15px 0;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media (min-width: 576px) and (max-width:767.98px) {
+
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container h2{
+        position: static;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .image1,
+    .image2{
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image1 img,
+    .image2 img{
+        position: static;
+        width: 220px;
+        height: 300px;
+        margin: 10px 0;
+    }
+
+    .icon ul{
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .container2{
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .card2{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .image3{
+        width: 100%;
+    }
+
+    .image3 img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .p{
+        width: 100%;
+        margin: 15px 0;
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px) {
+    
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container h2{
+        position: static;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .image1,
+    .image2{
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image1 img,
+    .image2 img{
+        position: static;
+        width: 220px;
+        height: 300px;
+        margin: 10px 0;
+    }
+
+    .icon ul{
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .container2{
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .card2{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .image3{
+        width: 100%;
+    }
+
+    .image3 img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .p{
+        width: 100%;
+        margin: 15px 0;
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+@media (min-width:992px) and (max-width:1199.98px) {
+    .container2{
+        height: auto;
+    }
+    .p{
+        font-size: 15px;
+    }
+}
+.about-content{
+    width: 100%;
+    padding: 40px;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.p{
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.img{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+ h1{
+    font-family: 'montserrat,san-serif';
+    color: #4bb;
+    font-family:'poppins',sans-serif;
+}
+.sub-title{
+    text-transform: uppercase;
+    display: flex;
+    font-size: 30px;
+    margin:  20px;
+    color: rgb(13, 143, 194);
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width: 768px){
+
+    .about-content{
+        width: 95%;
+        padding: 20px 10px;
+    }
+
+    .sub-title{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .about-content h1{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .description{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .p{
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .img{
+        width: 100%;
+        height: auto;
+    }
+}
